@@ -1,33 +1,115 @@
 * {
   box-sizing: border-box;
+  font-family: 'Comic Sans MS', cursive;
 }
 
 body {
   margin: 0;
+  background:linear-gradient(180deg,rgba(223, 67, 67, 0.2),rgba(0,0,0,1)), url(./img/background.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-main {
-  margin: 20px 0 0 20px;
-  padding: 20px 0 0 20px;
-  background-color: lightgray;
-  border-radius: 24px;
-}
 
 header {
   width: 100%;
-  margin: 0;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
-}
-
-nav ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px 25px;
-  text-align: right;
-}
-
-nav {
-  display: flex;
   align-items: center;
+}
+
+.explosion{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-image: url(./img/explosion.png);
+  margin-top: -50px;
+  height: 400px;
+  width: 400px;
+  padding-left: 50px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+h1{
+  font-size: 3em;
+  padding: 0 30px 30px 0;
+  transform: rotate(-10deg);
+  text-align: center;
+  font-weight: 1000;
+  color: #050505;
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+
+}
+
+nav{
+  width: 250px;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+main {
+  margin: -50px 20px 0 20px;
+  padding: 10px 10px 0 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: -2px -2px 20px black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section{
+  border: 2px solid black;
+  box-shadow: 0 6px 6px -6px black;
+  display: inline-block;
+  flex: 1 1;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  margin: 2px;
+  flex-basis: 300px;
+}
+
+.text{
+  background-color: #fff;
+  border: 2px solid black;
+  margin: 0;
+  padding: 3px 10px;
+  left: -5px;
+  top: -2px;
+  position: absolute;
+}
+
+section:nth-of-type(4n+1){
+  background-image: radial-gradient(circle, #77e2fd, #2b8ce7)
+}
+
+section:nth-of-type(4n+2){
+  background-image: radial-gradient(circle,#fd4b4b,#f71b1b);
+}
+
+section:nth-of-type(4n+3){
+  background-image: radial-gradient(circle,#faf874,#cfcc00);
+}
+
+section:nth-of-type(4n+4){
+  background-image: radial-gradient(circle,#71fd46,#3efd04);
+}
+
+section:nth-of-type(3n+2){
+  flex-basis: 600px;
 }
