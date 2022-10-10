@@ -69,25 +69,21 @@ nav ul li a:hover {
   z-index: 2;
 }
 
+/* main */
+
 main {
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 h1,
 h2 {
   color: var(--linecolor);
   width: 100%;
-}
-
-h1 {
   font-weight: 100;
   text-align: center;
+  padding: 0 10% 0 10%;
 }
 
-h2 {
-  font-weight: 100;
-  text-align: center;
-}
 
 span {
   color: #35d10e;
@@ -123,4 +119,25 @@ span {
 .lists ul li {
   color: var(--linecolor);
   list-style-type: disc;
+}
+
+.social{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-brands{
+  padding: 25px
+}
+
+.code{
+  width: 30%;
+  position: fixed;
+  z-index: 7;
 }
