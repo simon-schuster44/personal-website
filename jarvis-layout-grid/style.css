@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html{
+    --linecolor: #06a3ca;
+
+}
+
+body{
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.1),#000000), url(./img/background2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+nav{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px 0 10px;
+    text-align: right;
+}
+
+nav ul li a{
+    color: var(--linecolor);
+    text-decoration: none;
+}
+
+
+.loading{
+    position: fixed;
+    margin: 400px 0 0 20% ;
+}
+
+h1, h2{
+  color: var(--linecolor);
+  width: 100%;
+} 
+
+h1{
+    font-weight: 100;
+    padding: 20%;
+}
+
+h2{
+    text-align: center;
+}
+
+.test{
+    border-top: 1px solid var(--linecolor);
+    border-right: 2px solid var(--linecolor);
+    border-bottom: 1px solid var(--linecolor);
+    border-left: 2px solid var(--linecolor);
+    /* box-shadow: 0px 0px 8px white inset; */
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+
+}
+
+.border-left{
+    padding: 4px;
+    margin: 4px;
+    border-left: 1px solid var(--linecolor);
+}
+
+.border-bottom{
+    margin: 4px;
+    padding: 4px;
+    border-bottom: 1px solid var(--linecolor);
+}
+section{
+    margin-left: 50px;
+    margin-right: 10px;
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.row-2{
+    grid-row: span 2;
+}
+
+.col-2{
+    grid-column: span 2;
+}
+
+.col-3{
+    grid-column: span 3;
+}
+
+.brand{
+    padding-top: 10px;
+    color: var(--linecolor);
+    text-align: center;
+    display: block;
+}
+
+button{
+    font-size: 20px;
+    background-color: transparent;
+    color: var(--linecolor);
+    border-color: var(--linecolor);
+}
