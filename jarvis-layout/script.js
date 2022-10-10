@@ -1,12 +1,13 @@
 var i = 0;
-var txt = 'Waiting for host...';
+var txt1 = 'Waiting for host...';
+var txt2 = 'Connecting...'
 var duration = 80;
-var timer = 10;
+var timer = 8;
 var j = 0;
 
 function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
+  if (i < txt1.length) {
+    document.getElementById("demo").innerHTML += txt1.charAt(i);
     i++;
     setTimeout(typeWriter, duration);
   } else{
@@ -30,7 +31,7 @@ if (j < timer) {
 
 function unpoint(){
     if (j < timer) {
-        document.getElementById("demo").innerHTML = txt;
+        document.getElementById("demo").innerHTML = txt1;
         j++;
         setTimeout(point, 500);
     }else {
