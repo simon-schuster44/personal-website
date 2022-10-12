@@ -9,9 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
+    <script src="./script.js" defer></script>
     <title>Personal website</title>
   </head>
-  <body>
+  <body onload="typeWriter()">
     <header>
       <h1>SIMON SCHUSTER</h1>
       <nav>
@@ -43,6 +44,32 @@
         </ul>
       </section>
 
+      <section class="skills">
+        <h2>Here are some of my skills:</h2>
+        <div class="skills-cards">
+          <div class="card">
+            <i class="fa-solid fa-laptop fa-10x"></i>
+            <p class="html">
+              &#60;/HTML&#62
+            </p>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-laptop fa-10x"></i>
+            <div class="css">
+            <p class="c">{C</p>
+              <p class="S">S</p>
+              <p class="s">S}</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-laptop fa-10x"></i>
+            <p class="js" id="js"></p>
+          </div>
+        </div>
+      </section>
+
       <section class="contact">
         <div class="card">
           <i class="fa-solid fa-phone fa-10x"></i>
@@ -55,6 +82,7 @@
       </section>
 
       <section class="social">
+
         <div class="card">
           <i class="fa-brands fa-github fa-10x"></i>
           <h3>GitHub</h3>
