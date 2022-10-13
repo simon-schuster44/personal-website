@@ -84,6 +84,9 @@ main h2 {
   text-align: center;
 }
 
+/* Profile */
+
+
 .profile {
   margin-top: 100px;
   display: flex;
@@ -180,6 +183,7 @@ main h2 {
   position: absolute;
   top: 50px;
 }
+
 /* Contact */
 
 .contact {
