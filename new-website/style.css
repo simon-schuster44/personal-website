@@ -84,6 +84,9 @@ main h2 {
   text-align: center;
 }
 
+/* Profile */
+
+
 .profile {
   margin-top: 100px;
   display: flex;
@@ -178,16 +181,9 @@ main h2 {
   font-weight: bold;
   font-size: 20px;
   position: absolute;
-  top: 50px;
+  top: 60px;
 }
 
-/* Sites */
-
-.sites img {
-  width: 50%;
-  border: 3px solid white;
-  border-radius: 8px;
-}
 
 /* Contact */
 
