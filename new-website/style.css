@@ -185,8 +185,21 @@ main h2 {
 
 /* Sites */
 
+
+.sites-cards{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
 .sites img {
   width: 400px;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.sites img:hover{
+  cursor: pointer;
 }
 
 /* Contact */
