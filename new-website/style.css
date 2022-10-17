@@ -2,6 +2,10 @@
   --gap: 20px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -68,6 +72,21 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav ul li::before,
+nav ul li::after {
+  content: "";
+  background: white;
+  display: block;
+  height: 2px;
+  width: 0%;
+  margin: auto;
+  transition: 0.3s;
+}
+
+nav ul li:hover::before,
+nav ul li:hover::after {
+  width: 100%;
+}
 /* MAIN */
 
 section {
@@ -185,8 +204,7 @@ main h2 {
 
 /* Sites */
 
-
-.sites-cards{
+.sites-cards {
   display: flex;
   justify-content: center;
   margin-top: 40px;
@@ -198,7 +216,7 @@ main h2 {
   border-radius: 8px;
 }
 
-.sites img:hover{
+.sites img:hover {
   cursor: pointer;
 }
 
