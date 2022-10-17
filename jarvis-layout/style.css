@@ -75,15 +75,25 @@ main {
   margin-top: 15%;
 }
 
-.aboutme {
-  height: 10px;
-  overflow: hidden;
-  border: 2px solid yellow;
-  transition: 1s;
+.test {
+  width: 100%;
+  position: relative;
+}
+.test::after {
+  content: "It works!";
+  background-color: #498291;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  margin: auto;
+  transition: 0.5s;
 }
 
-.aboutme:hover {
-  height: 100%;
+.test:hover::after {
+  width: 100%;
+  opacity: 1;
 }
 
 h1,
