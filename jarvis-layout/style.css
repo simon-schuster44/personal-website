@@ -75,6 +75,17 @@ main {
   margin-top: 15%;
 }
 
+.aboutme {
+  height: 10px;
+  overflow: hidden;
+  border: 2px solid yellow;
+  transition: 1s;
+}
+
+.aboutme:hover {
+  height: 100%;
+}
+
 h1,
 h2 {
   color: var(--linecolor);
@@ -83,7 +94,6 @@ h2 {
   text-align: center;
   padding: 0 10% 0 10%;
 }
-
 
 span {
   color: #35d10e;
@@ -121,22 +131,22 @@ span {
   list-style-type: disc;
 }
 
-.social{
+.social {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.row{
+.row {
   display: flex;
   justify-content: space-between;
 }
 
-.fa-brands{
-  padding: 25px
+.fa-brands {
+  padding: 25px;
 }
 
-.code{
+.code {
   width: 30%;
   position: fixed;
   z-index: 7;
